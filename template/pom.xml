@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.chengdu</groupId>
-	<artifactId>templete</artifactId>
+	<artifactId>template</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>template</name>
 	<description>template project for Spring Boot</description>
