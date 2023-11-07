@@ -1,0 +1,25 @@
+2023-11-07 14:26:33,643 [main] [INFO] | StartupInfoLogger.logStarting(51) | - | Starting TempleteApplication using Java 18.0.1.1 with PID 91164 (/Users/shuaimou/IdeaProjects/templete-all/template/target/classes started by shuaimou in /Users/shuaimou/IdeaProjects/templete-all)
+2023-11-07 14:26:33,654 [main] [INFO] | SpringApplication.logStartupProfileInfo(644) | - | The following 1 profile is active: "dev"
+2023-11-07 14:26:35,445 [main] [INFO] | RepositoryConfigurationDelegate.multipleStoresDetected(291) | - | Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-07 14:26:35,448 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(138) | - | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-07 14:26:35,486 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(208) | - | Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-11-07 14:26:36,993 [main] [INFO] | TomcatWebServer.initialize(108) | - | Tomcat initialized with port(s): 8081 (http)
+2023-11-07 14:26:37,003 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing ProtocolHandler ["http-nio-8081"]
+2023-11-07 14:26:37,007 [main] [INFO] | DirectJDKLog.log(173) | - | Starting service [Tomcat]
+2023-11-07 14:26:37,008 [main] [INFO] | DirectJDKLog.log(173) | - | Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-07 14:26:37,140 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing Spring embedded WebApplicationContext
+2023-11-07 14:26:37,145 [main] [INFO] | ServletWebServerApplicationContext.prepareWebApplicationContext(291) | - | Root WebApplicationContext: initialization completed in 3345 ms
+2023-11-07 14:26:38,731 [main] [INFO] | Version.logVersion(41) | - | Redisson 3.24.0
+2023-11-07 14:26:38,801 [main] [WARN] | DnsServerAddressStreamProviders.<clinit>(70) | - | Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2023-11-07 14:26:39,017 [redisson-netty-2-5] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 1 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 14:26:39,181 [redisson-netty-2-20] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 24 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 14:26:39,813 [main] [INFO] | EndpointLinksResolver.<init>(58) | - | Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-11-07 14:26:39,894 [main] [INFO] | DirectJDKLog.log(173) | - | Starting ProtocolHandler ["http-nio-8081"]
+2023-11-07 14:26:39,911 [main] [INFO] | TomcatWebServer.start(220) | - | Tomcat started on port(s): 8081 (http) with context path '/template'
+2023-11-07 14:26:39,932 [main] [INFO] | StartupInfoLogger.logStarted(57) | - | Started TempleteApplication in 7.094 seconds (process running for 8.164)
+2023-11-07 14:26:55,126 [http-nio-8081-exec-1] [INFO] | DirectJDKLog.log(173) | - | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 14:26:55,128 [http-nio-8081-exec-1] [INFO] | FrameworkServlet.initServletBean(532) | - | Initializing Servlet 'dispatcherServlet'
+2023-11-07 14:26:55,135 [http-nio-8081-exec-1] [INFO] | FrameworkServlet.initServletBean(554) | - | Completed initialization in 3 ms
+2023-11-07 14:26:55,256 [http-nio-8081-exec-1] [INFO] | DruidDataSource.init(1009) | - | {dataSource-1} inited
+2023-11-07 14:27:52,572 [SpringApplicationShutdownHook] [INFO] | DruidDataSource.close(2174) | - | {dataSource-1} closing ...
+2023-11-07 14:27:52,591 [SpringApplicationShutdownHook] [INFO] | DruidDataSource.close(2247) | - | {dataSource-1} closed

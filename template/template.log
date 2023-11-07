@@ -1,0 +1,155 @@
+2023-11-07 11:02:32,253 [main] [INFO] | StartupInfoLogger.logStarting(51) | - | Starting TempleteApplication using Java 18.0.1.1 with PID 86882 (/Users/shuaimou/IdeaProjects/template/target/classes started by shuaimou in /Users/shuaimou/IdeaProjects/template)
+2023-11-07 11:02:32,260 [main] [INFO] | SpringApplication.logStartupProfileInfo(644) | - | The following 1 profile is active: "dev"
+2023-11-07 11:02:34,066 [main] [INFO] | RepositoryConfigurationDelegate.multipleStoresDetected(291) | - | Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-07 11:02:34,068 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(138) | - | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-07 11:02:34,090 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(208) | - | Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-11-07 11:02:34,228 [main] [WARN] | Logger.warn(44) | - | No MyBatis mapper was found in '[com.chengdu.templete]' package. Please check your configuration.
+2023-11-07 11:02:35,499 [main] [INFO] | TomcatWebServer.initialize(108) | - | Tomcat initialized with port(s): 8081 (http)
+2023-11-07 11:02:35,515 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing ProtocolHandler ["http-nio-8081"]
+2023-11-07 11:02:35,518 [main] [INFO] | DirectJDKLog.log(173) | - | Starting service [Tomcat]
+2023-11-07 11:02:35,518 [main] [INFO] | DirectJDKLog.log(173) | - | Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-07 11:02:35,743 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing Spring embedded WebApplicationContext
+2023-11-07 11:02:35,752 [main] [INFO] | ServletWebServerApplicationContext.prepareWebApplicationContext(291) | - | Root WebApplicationContext: initialization completed in 3351 ms
+2023-11-07 11:02:37,263 [main] [INFO] | Version.logVersion(41) | - | Redisson 3.24.0
+2023-11-07 11:02:37,343 [main] [WARN] | DnsServerAddressStreamProviders.<clinit>(70) | - | Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2023-11-07 11:02:37,559 [redisson-netty-2-5] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 1 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 11:02:37,708 [redisson-netty-2-20] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 24 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 11:02:38,553 [main] [INFO] | EndpointLinksResolver.<init>(58) | - | Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-11-07 11:02:38,634 [main] [INFO] | DirectJDKLog.log(173) | - | Starting ProtocolHandler ["http-nio-8081"]
+2023-11-07 11:02:38,650 [main] [INFO] | TomcatWebServer.start(220) | - | Tomcat started on port(s): 8081 (http) with context path '/template'
+2023-11-07 11:02:38,674 [main] [INFO] | StartupInfoLogger.logStarted(57) | - | Started TempleteApplication in 7.278 seconds (process running for 8.327)
+2023-11-07 11:06:02,984 [SpringApplicationShutdownHook] [INFO] | DruidDataSource.close(2174) | - | {dataSource-0} closing ...
+2023-11-07 12:50:10,864 [main] [INFO] | StartupInfoLogger.logStarting(51) | - | Starting TempleteApplication using Java 18.0.1.1 with PID 89789 (/Users/shuaimou/IdeaProjects/template/target/classes started by shuaimou in /Users/shuaimou/IdeaProjects/template)
+2023-11-07 12:50:10,873 [main] [INFO] | SpringApplication.logStartupProfileInfo(644) | - | The following 1 profile is active: "dev"
+2023-11-07 12:50:12,759 [main] [INFO] | RepositoryConfigurationDelegate.multipleStoresDetected(291) | - | Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-07 12:50:12,761 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(138) | - | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-07 12:50:12,788 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(208) | - | Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-11-07 12:50:14,076 [main] [INFO] | TomcatWebServer.initialize(108) | - | Tomcat initialized with port(s): 8081 (http)
+2023-11-07 12:50:14,089 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing ProtocolHandler ["http-nio-8081"]
+2023-11-07 12:50:14,094 [main] [INFO] | DirectJDKLog.log(173) | - | Starting service [Tomcat]
+2023-11-07 12:50:14,095 [main] [INFO] | DirectJDKLog.log(173) | - | Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-07 12:50:14,262 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing Spring embedded WebApplicationContext
+2023-11-07 12:50:14,272 [main] [INFO] | ServletWebServerApplicationContext.prepareWebApplicationContext(291) | - | Root WebApplicationContext: initialization completed in 3221 ms
+2023-11-07 12:50:16,212 [main] [INFO] | Version.logVersion(41) | - | Redisson 3.24.0
+2023-11-07 12:50:16,268 [main] [WARN] | DnsServerAddressStreamProviders.<clinit>(70) | - | Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2023-11-07 12:50:16,520 [redisson-netty-2-5] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 1 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 12:50:16,694 [redisson-netty-2-20] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 24 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 12:50:17,331 [main] [INFO] | EndpointLinksResolver.<init>(58) | - | Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-11-07 12:50:17,416 [main] [INFO] | DirectJDKLog.log(173) | - | Starting ProtocolHandler ["http-nio-8081"]
+2023-11-07 12:50:17,433 [main] [INFO] | TomcatWebServer.start(220) | - | Tomcat started on port(s): 8081 (http) with context path '/template'
+2023-11-07 12:50:17,456 [main] [INFO] | StartupInfoLogger.logStarted(57) | - | Started TempleteApplication in 7.536 seconds (process running for 9.298)
+2023-11-07 12:55:20,849 [http-nio-8081-exec-1] [INFO] | DirectJDKLog.log(173) | - | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 12:55:20,855 [http-nio-8081-exec-1] [INFO] | FrameworkServlet.initServletBean(532) | - | Initializing Servlet 'dispatcherServlet'
+2023-11-07 12:55:20,863 [http-nio-8081-exec-1] [INFO] | FrameworkServlet.initServletBean(554) | - | Completed initialization in 7 ms
+2023-11-07 12:55:21,130 [http-nio-8081-exec-1] [INFO] | DruidDataSource.init(1009) | - | {dataSource-1} inited
+2023-11-07 12:55:21,929 [http-nio-8081-exec-1] [ERROR] | DirectJDKLog.log(175) | - | Servlet.service() for servlet [dispatcherServlet] in context with path [/template] threw exception [Request processing failed: org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 't_order.PRIMARY'
+### The error may exist in file [/Users/shuaimou/IdeaProjects/template/target/classes/sql/mapper/OrderMapper.xml]
+### The error may involve com.chengdu.template.dao.templatesql.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_order (order_id, user_id, status       )     values (?, ?, ?       )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 't_order.PRIMARY'
+; Duplicate entry '1' for key 't_order.PRIMARY'] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 't_order.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:483)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy79.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at com.chengdu.template.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:21)
+	at com.chengdu.template.web.controller.OrderController.createOrder(OrderController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-07 12:58:16,122 [SpringApplicationShutdownHook] [INFO] | DruidDataSource.close(2174) | - | {dataSource-1} closing ...
+2023-11-07 12:58:16,139 [SpringApplicationShutdownHook] [INFO] | DruidDataSource.close(2247) | - | {dataSource-1} closed
+2023-11-07 12:58:22,619 [main] [INFO] | StartupInfoLogger.logStarting(51) | - | Starting TempleteApplication using Java 18.0.1.1 with PID 90232 (/Users/shuaimou/IdeaProjects/template/target/classes started by shuaimou in /Users/shuaimou/IdeaProjects/template)
+2023-11-07 12:58:22,626 [main] [INFO] | SpringApplication.logStartupProfileInfo(644) | - | The following 1 profile is active: "dev"
+2023-11-07 12:58:24,694 [main] [INFO] | RepositoryConfigurationDelegate.multipleStoresDetected(291) | - | Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-07 12:58:24,697 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(138) | - | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-07 12:58:24,725 [main] [INFO] | RepositoryConfigurationDelegate.registerRepositoriesIn(208) | - | Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-11-07 12:58:26,034 [main] [INFO] | TomcatWebServer.initialize(108) | - | Tomcat initialized with port(s): 8081 (http)
+2023-11-07 12:58:26,043 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing ProtocolHandler ["http-nio-8081"]
+2023-11-07 12:58:26,047 [main] [INFO] | DirectJDKLog.log(173) | - | Starting service [Tomcat]
+2023-11-07 12:58:26,047 [main] [INFO] | DirectJDKLog.log(173) | - | Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-07 12:58:26,178 [main] [INFO] | DirectJDKLog.log(173) | - | Initializing Spring embedded WebApplicationContext
+2023-11-07 12:58:26,183 [main] [INFO] | ServletWebServerApplicationContext.prepareWebApplicationContext(291) | - | Root WebApplicationContext: initialization completed in 3384 ms
+2023-11-07 12:58:27,940 [main] [INFO] | Version.logVersion(41) | - | Redisson 3.24.0
+2023-11-07 12:58:27,998 [main] [WARN] | DnsServerAddressStreamProviders.<clinit>(70) | - | Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2023-11-07 12:58:28,306 [redisson-netty-2-5] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 1 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 12:58:28,490 [redisson-netty-2-20] [INFO] | ConnectionPool.lambda$createConnection$0(137) | - | 24 connections initialized for localhost/127.0.0.1:6379
+2023-11-07 12:58:29,490 [main] [INFO] | EndpointLinksResolver.<init>(58) | - | Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-11-07 12:58:29,664 [main] [INFO] | DirectJDKLog.log(173) | - | Starting ProtocolHandler ["http-nio-8081"]
+2023-11-07 12:58:29,688 [main] [INFO] | TomcatWebServer.start(220) | - | Tomcat started on port(s): 8081 (http) with context path '/template'
+2023-11-07 12:58:29,723 [main] [INFO] | StartupInfoLogger.logStarted(57) | - | Started TempleteApplication in 7.947 seconds (process running for 9.226)
+2023-11-07 12:58:47,910 [http-nio-8081-exec-1] [INFO] | DirectJDKLog.log(173) | - | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 12:58:47,911 [http-nio-8081-exec-1] [INFO] | FrameworkServlet.initServletBean(532) | - | Initializing Servlet 'dispatcherServlet'
+2023-11-07 12:58:47,913 [http-nio-8081-exec-1] [INFO] | FrameworkServlet.initServletBean(554) | - | Completed initialization in 1 ms
+2023-11-07 12:58:48,041 [http-nio-8081-exec-1] [INFO] | DruidDataSource.init(1009) | - | {dataSource-1} inited
+2023-11-07 14:12:36,326 [SpringApplicationShutdownHook] [INFO] | DruidDataSource.close(2174) | - | {dataSource-1} closing ...
+2023-11-07 14:12:36,331 [SpringApplicationShutdownHook] [INFO] | DruidDataSource.close(2247) | - | {dataSource-1} closed
