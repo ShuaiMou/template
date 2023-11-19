@@ -31,9 +31,9 @@ singleServerConfig:
   # DNS监测时间间隔，单位：毫秒
   dnsMonitoringInterval: 5000
 # 线程池数量,默认值: 当前处理核数量 * 2
-#threads: 0
+threads: 10
 # Netty线程池数量,默认值: 当前处理核数量 * 2
-#nettyThreads: 0
+nettyThreads: 8
 # 编码
 # 传输模式
 #threads: 2
