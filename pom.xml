@@ -10,7 +10,8 @@
 
 	<modules>
 		<module>template</module>
-	</modules>
+        <module>AdminServer</module>
+    </modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
