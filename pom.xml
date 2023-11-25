@@ -11,7 +11,9 @@
 	<modules>
 		<module>template</module>
         <module>AdminServer</module>
-    </modules>
+        <module>customRPC</module>
+		<module>kafkaDemo</module>
+	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

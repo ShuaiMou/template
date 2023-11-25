@@ -1,0 +1,20 @@
+syntax = "proto3";
+option java_outer_classname = "PersonDto";
+
+message Person {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+  repeated Phone phone = 4;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message Phone {
+    string number = 1;
+    PhoneType type = 2;
+  }
+}
