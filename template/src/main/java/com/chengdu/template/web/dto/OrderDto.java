@@ -1,8 +1,10 @@
 package com.chengdu.template.web.dto;
 
+import com.chengdu.template.web.dto.DtoBase;
+
 import java.io.Serializable;
 
-public class OrderDto implements Serializable {
+public class OrderDto extends DtoBase {
     private Long orderId;
 
     private Integer userId;

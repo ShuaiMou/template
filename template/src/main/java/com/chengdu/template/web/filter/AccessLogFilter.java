@@ -8,13 +8,13 @@ import com.chengdu.template.common.ThreadLocalContextHolder;
 import com.chengdu.template.constants.WebConstants;
 import com.chengdu.template.utils.HttpServletRequestHelper;
 import com.chengdu.template.utils.IPUtils;
+import com.chengdu.template.web.filter.wrapper.ContentCachingRequestWrapper;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
-import org.springframework.web.util.ContentCachingRequestWrapper;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -49,14 +49,12 @@ public class AccessLogFilter implements Filter {
     }
 
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
 
-        HttpServletRequest request = (HttpServletRequest) servletRequest;
-        HttpServletResponse response = (HttpServletResponse) servletResponse;
 
         MDC.put("hostname", HOSTNAME);
         AccessLog.AccessLogBuilder builder = AccessLogContext.getLogBuilder();
-        Enumeration<String> names = request.getParameterNames();
+        Enumeration<String> names = request.getParameterNames();;
         List<String> keys = new ArrayList<>();
 
         while (names.hasMoreElements()) {
@@ -85,22 +83,22 @@ public class AccessLogFilter implements Filter {
 
         ThreadLocalContextHolder.setValue(WebConstants.REQUEST_PARAMETERS, parsb.toString());
 
-        Enumeration<String> headerNames = request.getHeaderNames();
+        HttpServletRequest httpServletRequest = (HttpServletRequest)request;
+        Enumeration<String> headerNames = httpServletRequest.getHeaderNames();
         Map<String, String> headers = new HashMap<>();
         while (headerNames.hasMoreElements()) {
             String name = headerNames.nextElement();
-            headers.put(name, request.getHeader(name));
+            headers.put(name, httpServletRequest.getHeader(name));
 
         }
 
         String requestBody = null;
-
         if (request instanceof ContentCachingRequestWrapper) {
             requestBody = HttpServletRequestHelper.getRequestBody(request);
         }
 
-        builder.clientIp(IPUtils.getIpAddress(request)).httpMethod(request.getMethod())
-                .uri(URLDecoder.decode(request.getRequestURI()))
+        builder.clientIp(IPUtils.getIpAddress(httpServletRequest)).httpMethod(httpServletRequest.getMethod())
+                .uri(URLDecoder.decode(httpServletRequest.getRequestURI()))
                 .headers(headers)
                 .requestBody(requestBody)
                 .requestParameters(toString(parsMap));
@@ -137,7 +135,7 @@ public class AccessLogFilter implements Filter {
             long now = System.currentTimeMillis();
             long cost = now - builder.build().getStartTime();
             builder.cost(cost);
-            if (needRecord(request)) {
+            if (needRecord(httpServletRequest)) {
                 logger.info(builder.build().toJsonString() + " " + cost + "ms");
             }
             AccessLogContext.remove();

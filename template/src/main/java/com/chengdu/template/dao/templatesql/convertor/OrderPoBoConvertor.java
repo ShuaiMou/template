@@ -2,7 +2,6 @@ package com.chengdu.template.dao.templatesql.convertor;
 
 import com.chengdu.template.dao.templatesql.po.OrderPo;
 import com.chengdu.template.service.entity.OrderBo;
-import com.chengdu.template.web.dto.OrderDto;
 import org.springframework.beans.BeanUtils;
 
 public final class OrderPoBoConvertor {

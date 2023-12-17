@@ -5,6 +5,7 @@ package com.chengdu.template.utils;
 
 import com.chengdu.template.common.ClientType;
 import com.chengdu.template.constants.CommonHeaderKey;
+import jakarta.servlet.ServletRequest;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
@@ -29,14 +30,14 @@ public final class HttpServletRequestHelper {
      * @return
      * @throws IOException
      */
-    public static String getRequestBody(HttpServletRequest request) throws IOException {
+    public static String getRequestBody(ServletRequest request) throws IOException {
         return StreamUtils.copyToString(request.getInputStream(), getCharset(request));
     }
 
     /**
      * 获取请求体的字符编码
      */
-    public static Charset getCharset(HttpServletRequest request) {
+    public static Charset getCharset(ServletRequest request) {
         String charset = request.getCharacterEncoding();
         if (charset != null && Charset.isSupported(charset)) {
             return Charset.forName(charset);

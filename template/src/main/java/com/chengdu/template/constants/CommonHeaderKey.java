@@ -44,9 +44,15 @@ public final class CommonHeaderKey {
 
     public static final String ACCEPT = "Accept";
 
-    public static final String ULS = "ULS";
+    /**
+     * 跳过校验时间戳
+     */
+    public static final String SKIP_CHECK_STAMP = "Skip-Check-Stamp";
 
-    public static final String BFE_HTTPS_DEBUG = "X-Bfe-Httpsdebug";
+    /**
+     * 跳过校验 token
+     */
+    public static final String SKIP_CHECK_LOGIN = "Skip-Check-Login";
 
     public static final String[] CORS_ALLOW_HEADERS = {
             OS_TYPE,
