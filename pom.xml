@@ -13,7 +13,8 @@
         <module>AdminServer</module>
         <module>customRPC</module>
 		<module>kafkaDemo</module>
-	</modules>
+        <module>rocketmqDemo</module>
+    </modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -23,7 +24,7 @@
 	</parent>
 
 	<properties>
-		<java.version>17</java.version>
+		<java.version>8</java.version>
 		<project.fastjson.version>1.2.83</project.fastjson.version>
 	</properties>
 

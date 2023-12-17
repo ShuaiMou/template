@@ -11,11 +11,17 @@ import io.netty.channel.ChannelFuture;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.net.InetSocketAddress;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.SocketChannel;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CountDownLatch;
@@ -23,7 +29,25 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class MyRpcClient {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        Selector selector = Selector.open();
+        SocketChannel socketChannel = SocketChannel.open();
+        socketChannel.connect(new InetSocketAddress("localhost", 8081));
+        socketChannel.register(selector, SelectionKey.OP_READ);
+
+        while(selector.select() > 0) {
+            Set<SelectionKey> selectionKeys = selector.selectedKeys();
+            Iterator<SelectionKey> iterator = selectionKeys.iterator();
+            while(iterator.hasNext()) {
+                SelectionKey key = iterator.next();
+                iterator.remove();;
+                if(key.isReadable()) {
+
+                }
+            }
+        }
+
+
         MyRpcClient myRpcClient = new MyRpcClient();
         int size = 20;
         CountDownLatch countDownLatch = new CountDownLatch(size);
