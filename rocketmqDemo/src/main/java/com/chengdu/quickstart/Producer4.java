@@ -9,10 +9,10 @@ public class Producer4 {
 
 		DefaultMQProducer producer = new DefaultMQProducer("test-group");
 
-		producer.setNamesrvAddr("192.168.0.100:9876");
+		producer.setNamesrvAddr(Constant.NAME_SERVER_ADDR);
 		producer.start();
 
-		Message message = new Message("myTopic003", "TAG-B","KEY-xx","xxooxx".getBytes());
+		Message message = new Message("myTopic001", "TAG-B","KEY-xx","xxooxx".getBytes());
 
 		producer.send(message);
 		

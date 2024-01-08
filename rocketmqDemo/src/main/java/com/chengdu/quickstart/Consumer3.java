@@ -16,7 +16,7 @@ public class Consumer3 {
 
 		DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("test-saul001TAG-B");
 
-		consumer.setNamesrvAddr("192.168.0.100:9876");
+		consumer.setNamesrvAddr(Constant.NAME_SERVER_ADDR);
 
 		MessageSelector messageSelector = MessageSelector.bySql("age >= 18 and age <= 28");
 		
